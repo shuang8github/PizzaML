@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<menu>
+    <categories>
+        <category name="Pizza">
+            <items>
+                <item name="Sausage">
+                    <desc></desc>
+                    <price size="large">10.85</price>
+                    <price size="small">6.85</price>
+                </item>
+                <item name="Meatball">
+                    <desc></desc>
+                    <price size="large">10.85</price>
+                    <price size="small">6.85</price>
+                </item>
+                <item name="Bacon">
+                    <desc></desc>
+                    <price size="large">10.85</price>
+                    <price size="small">6.85</price>
+                </item>
+            </items>
+        </category>
+        <category name="Salad">
+            <items>
+                <item name="Garden">
+                    <desc></desc>
+                    <price size="large">4.50</price>
+                    <price size="small">3.50</price>
+                </item>
+                <item name="Greek">
+                    <desc></desc>
+                    <price size="large">5.50</price>
+                    <price size="small">4.50</price>
+                </item>
+                <item name="Chichen">
+                    <desc></desc>
+                    <price size="large">5.95</price>
+                    <price size="small">4.95</price>
+                </item>
+            </items>
+        </category>
+        <category name="Side Order">
+            <items>
+                <item name="Onion Ring">
+                    <desc></desc>
+                    <price size="large">2.95</price>
+                    <price size="small">2.60</price>
+                </item>
+                <item name="French Fries">
+                    <desc></desc>
+                    <price size="large">2.65</price>
+                    <price size="small">2.25</price>
+                </item>
+                <item name="Spicy Fries">
+                    <desc></desc>
+                    <price size="large">2.95</price>
+                    <price size="small">2.60</price>
+                </item>
+            </items>
+        </category>
+    </categories>
+</menu>
