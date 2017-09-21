@@ -1,23 +1,18 @@
-<?php
-// Create a new DOMDocument instance
-$dom = new DOMDocument;
-
-// Load the XML
-$dom->loadXML('
-<fruits>
- <apples>
-   <apple>braeburn</apple>
-   <apple>granny smith</apple>
- </apples>
- <pears>
-   <pear>conference</pear>
- </pears>
-</fruits>
-');
-
-// Print XPath for each element
-// foreach ($dom->getElementsByTagName('*') as $node) {
-foreach ($dom->xpath("/fruits") as $node) {
-  echo $node->DOMNode::getNodePath() . "\n";
-}
-?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order</title>
+  </head>
+  <body>
+    <?php
+      $dom = simplexml_load_file("../model/menu.xml");
+      foreach ($dom->xpath("//price") as $price) {
+        $parent = $price->xpath("..")[0];
+        $grand_parent = $parent->xpath("..")[0];
+        $name = $grand_parent["name"] . " " . $price["size"] . " " . $price;
+        print $name;
+        print " : <input type=\"text\" name=\"$name\"><br>\n";
+      }
+    ?>
+  </body>
+</html>
